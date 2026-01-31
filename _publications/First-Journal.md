@@ -1,7 +1,7 @@
----
+<!-- ---
 title: "My Future First Journal Paper"
 collection: publications
-category: manuscripts
+# category: manuscripts
 permalink: /publication/First-Journal
 excerpt: 'Nothing published yet. Hopefully I can publish my work soon.'
 date: 2025-12-31
@@ -11,4 +11,4 @@ paperurl: 'http://academicpages.github.io/files/paper2.pdf'
 citation: '...'
 ---
 
-Will be published soon.
+Will be published soon. -->

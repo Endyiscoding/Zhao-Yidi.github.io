@@ -1,11 +1,11 @@
 ---
-title: "A Self-Supervised Learning Approach with Differentiable Optimizationfor UAV Trajectory Planning"
+title: "A Self-Supervised Learning Approach with Differentiable Optimization for UAV Trajectory Planning"
 collection: publications
 category: conferences
-permalink: /publication/IROS-2025
-excerpt: 'IROS 2025 Submission. Will release the code and paper soon!'
-date: 2025-02-17
-venue: 'IROS 2025 Submission'
+permalink: /publication/ICRA-2026
+excerpt: 'ICRA 2026 Accepted. Will release the code and paper soon!'
+date: 2026-02-17
+venue: 'IEEE International Conference on Robotics and Automation （ICRA)'
 paperurl: 'http://academicpages.github.io/files/paper3.pdf'
 citation: '...'
 ---

@@ -53,4 +53,4 @@ Teaching
   
 Service and leadership
 ======
-* Currently a Teaching Assistant in Aerospace Engineering at Penn State.
+* Currently a Research Assistant in Aerospace Engineering at Penn State.
