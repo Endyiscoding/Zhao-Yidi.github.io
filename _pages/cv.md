@@ -18,10 +18,10 @@ Work experience
 ======
 * Fall 2024: Teaching Assistant
   * Penn State University
-  * Course: ASRSP 313 - Aerospace Analysis
+  * Course: AERSP 313 - Aerospace Analysis
 * Spring 2025: Teaching Assistant
   * Penn State University
-  * Course: ASRSP 304 - System Dynamics and Control
+  * Course: AERSP 304 - System Dynamics and Control
   
 Skills
 ======
