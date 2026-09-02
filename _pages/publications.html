@@ -5,11 +5,11 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
-
 {% include base_path %}
+
+{% if site.author.googlescholar %}
+  <p class="publications-profile-link">Also available on <a href="{{ site.author.googlescholar }}">Google Scholar <span aria-hidden="true">→</span></a></p>
+{% endif %}
 
 <!-- New style rendering if publication categories are defined -->
 {% if site.publication_category %}
@@ -20,16 +20,23 @@ author_profile: true
         {% continue %}
       {% endif %}
       {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
+        <div class="publications-section-heading">
+          <h2>{{ category[1].title }}</h2>
+          <span>{{ category[0] }}</span>
+        </div>
+        <div class="publication-list">
         {% assign title_shown = true %}
       {% endunless %}
-      {% include archive-single.html %}
+      {% include publication-card.html publication=post %}
     {% endfor %}
+    {% if title_shown %}</div>{% endif %}
   {% endfor %}
 {% else %}
+  <div class="publication-list">
   {% for post in site.publications reversed %}
-    {% include archive-single.html %}
+    {% if post.title %}{% include publication-card.html publication=post %}{% endif %}
   {% endfor %}
+  </div>
 {% endif %}
 
 

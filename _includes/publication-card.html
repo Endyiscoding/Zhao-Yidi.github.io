@@ -1,0 +1,30 @@
+{% assign publication = include.publication %}
+<article class="publication-card">
+  <div class="publication-card__year">
+    <span>{{ publication.date | date: "%Y" }}</span>
+    {% if publication.venue contains "ICRA" %}<small>ICRA</small>{% endif %}
+  </div>
+
+  <div class="publication-card__body">
+    <h3>
+      {% if publication.paperurl %}<a href="{{ publication.paperurl }}">{{ publication.title }}</a>{% else %}{{ publication.title }}{% endif %}
+    </h3>
+    {% if publication.authors %}
+      {% assign highlighted_authors = publication.authors %}
+      {% for author in publication.equal_contributors %}
+        {% assign marked_author = author | append: '<sup class="equal-contribution-mark">*</sup>' %}
+        {% assign highlighted_authors = highlighted_authors | replace: author, marked_author %}
+      {% endfor %}
+      {% assign highlighted_authors = highlighted_authors | replace: 'Y. Jiang', '<strong class="publication-card__me">Y. Jiang</strong>' %}
+      <p class="publication-card__authors">{{ highlighted_authors }}</p>
+      {% if publication.equal_contributors %}<p class="publication-card__equal-note"><span>*</span> Equal contribution</p>{% endif %}
+    {% endif %}
+    <p class="publication-card__venue">{{ publication.venue }} <span>· {{ publication.date | date: "%Y" }}</span></p>
+    {% if publication.summary %}<p class="publication-card__summary">{{ publication.summary }}</p>{% endif %}
+
+    <div class="publication-card__actions">
+      {% if publication.paperurl %}<a class="publication-card__action publication-card__action--primary" href="{{ publication.paperurl }}">Paper</a>{% endif %}
+      {% if publication.projecturl %}<a class="publication-card__action" href="{{ base_path }}{{ publication.projecturl }}">Project</a>{% endif %}
+    </div>
+  </div>
+</article>

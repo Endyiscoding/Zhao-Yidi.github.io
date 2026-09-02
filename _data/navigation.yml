@@ -18,7 +18,8 @@ main:
   #   url: /portfolio/
         
   - title: "Blog Posts"
-    url: /blog/
+    url: "https://www.linkedin.com/in/yufei-jiang-54aa83303/recent-activity/all/"
+    external: true
     
   - title: "CV"
     url: /cv/

@@ -1,12 +1,30 @@
 ---
-#title: "Fast Exploration of UAV Swarm in Unknown Environments"
-title: "Fast&nbsp;Exploration&nbsp;of&nbsp;UAV&nbsp;Swarm&nbsp;in&nbsp;Unknown&nbsp;Environments"
-
+title: "Fast Exploration with UAV Swarms"
 collection: teaching
 type: "Undergraduate Thesis"
-permalink: /teaching/undergrad_thesis
+permalink: /projects/undergrad-thesis
 venue: Nankai University
 date: 2024-06-01
+excerpt: "A multi-UAV exploration framework that allocates unknown regions while accounting for obstacle distribution and local environmental complexity."
+codeurl: https://github.com/Jiang-Yufei/Multi-agent-exploration
 ---
 
-Due to the good maneuverability of the drone swarm, it shows high efficiency in the exploration of unknown environment, which can be applied in domains such as disaster relief and forest exploration. The method can allocate exploration regions to individual drones, while considering the uneven distribution of obstacles and calculating the local environmental complexity to adjust the exploration cost. All the code has been open-sourced at `https://github.com/Jiang-Yufei/Multi-agent-exploration.git`
+<div class="project-lead">
+  A cooperative exploration system that helps a UAV swarm cover unknown environments efficiently while adapting to uneven obstacle distributions.
+</div>
+
+<div class="project-actions">
+  <a class="btn btn--info" href="https://github.com/Jiang-Yufei/Multi-agent-exploration">View source code</a>
+</div>
+
+## The challenge
+
+UAV swarms can explore large unknown spaces faster than a single robot, but naive region assignment often creates uneven workloads. Dense obstacles and geometrically complex areas demand more planning effort than open space.
+
+## Our approach
+
+The framework assigns exploration regions to individual UAVs while accounting for both obstacle distribution and local environmental complexity. These signals adapt the exploration cost so that the team can distribute work more effectively.
+
+## Applications
+
+The approach is designed for time-sensitive missions such as disaster response, search and rescue, and large-scale environmental inspection.

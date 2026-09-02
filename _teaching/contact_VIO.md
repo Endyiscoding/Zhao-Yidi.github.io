@@ -1,18 +1,40 @@
 ---
-# title: "End-to-end&nbsp;UAV&nbsp;Planner"
-title: "Aerial Manipulation with Contact-Aware Onboard Perception and Hybrid Control"
+title: "Contact-Aware Aerial Manipulation"
 collection: teaching
 type: "Research Project"
 permalink: /projects/contact_vio
 venue: Penn State University
 date: 2025-09-15
+excerpt: "A fully onboard perception and control system that enables an aerial manipulator to approach a target, establish contact, and regulate interaction forces without motion capture."
+teaser: /images/Project/contact_vio/pipeline.png
+paperurl: https://arxiv.org/abs/2602.08251
 ---
 
-Aerial manipulation (AM) promises to move Unmanned Aerial Vehicles (UAVs) beyond passive inspection to contact-rich tasks such as grasping, assembly, and in-situ maintenance. Most prior AM demonstrations rely on external motion capture (MoCap) and emphasize position control for coarse interactions, limiting deployability. We present a fully onboard perception–control pipeline for contact-rich AM that achieves accurate motion tracking and regulated contact wrenches without MoCap. The main components are (1) an augmented visual–inertial odometry (VIO) estimator with contact-consistency factors that activate only during interaction, tightening uncertainty around the contact frame and reducing drift, and (2) image-based visual servoing (IBVS) to mitigate perception–control coupling, together with a hybrid force–motion controller that regulates contact wrenches and lateral motion for stable contact. Experiments show that our approach closes the perception-to-wrench loop using only onboard sensing, yielding an velocity estimation improvement of 66.01\% at contact, reliable target approach, and stable force holding—pointing toward deployable, in-the-wild aerial manipulation.
+<div class="project-lead">
+  A fully onboard perception–control pipeline for accurate motion tracking and stable, force-regulated interaction—without relying on external motion capture.
+</div>
 
-<figure>
- <img src="/images/Project/contact_vio/pipeline.png"/>
- <figcaption>
-       Pipeline of the proposed planning method
- </figcaption>
+<div class="project-actions">
+  <a class="btn btn--info" href="https://arxiv.org/abs/2602.08251">Read the paper</a>
+</div>
+
+## The challenge
+
+Most aerial manipulation demonstrations depend on motion-capture systems and focus on coarse position control. This makes it difficult to deploy them in unstructured, real-world environments where the robot must estimate its own motion and maintain reliable contact.
+
+## Our approach
+
+We connect onboard perception directly to interaction control through three components:
+
+- **Contact-aware VIO:** contact-consistency factors activate during interaction to reduce drift and tighten state uncertainty around the contact frame.
+- **Image-based visual servoing:** visual feedback reduces the effect of perception–control coupling during target approach.
+- **Hybrid force–motion control:** the controller regulates contact wrench while maintaining stable lateral motion.
+
+<figure class="project-figure">
+  <img src="/images/Project/contact_vio/pipeline.png" alt="Contact-aware aerial manipulation perception and control pipeline">
+  <figcaption>Overview of the onboard perception–control pipeline.</figcaption>
 </figure>
+
+## Results
+
+The system closes the perception-to-wrench loop using only onboard sensing. Experiments demonstrated reliable target approach and stable force holding, together with a **66.01% improvement in velocity estimation at contact**.

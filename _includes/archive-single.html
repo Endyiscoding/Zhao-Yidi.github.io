@@ -66,5 +66,9 @@
       <p><a href="{{ post.slidesurl }}">Download Slides</a></p>
     {% endif %}
 
+    {% if post.collection == 'publications' and post.projecturl %}
+      <p class="publication-project-link"><a href="{{ base_path }}{{ post.projecturl }}">Explore the related project <span aria-hidden="true">→</span></a></p>
+    {% endif %}
+
   </article>
 </div>
