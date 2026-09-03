@@ -7,7 +7,7 @@
 
   <div class="publication-card__body">
     <h3>
-      {% if publication.paperurl %}<a href="{{ publication.paperurl }}">{{ publication.title }}</a>{% else %}{{ publication.title }}{% endif %}
+      {% if publication.paperurl %}<a href="{{ publication.paperurl }}" target="_blank" rel="noopener noreferrer">{{ publication.title }}</a>{% else %}{{ publication.title }}{% endif %}
     </h3>
     {% if publication.authors %}
       {% assign highlighted_authors = publication.authors %}
@@ -23,8 +23,10 @@
     {% if publication.summary %}<p class="publication-card__summary">{{ publication.summary }}</p>{% endif %}
 
     <div class="publication-card__actions">
-      {% if publication.paperurl %}<a class="publication-card__action publication-card__action--primary" href="{{ publication.paperurl }}">Paper</a>{% endif %}
+      {% if publication.paperurl %}<a class="publication-card__action publication-card__action--primary" href="{{ publication.paperurl }}" target="_blank" rel="noopener noreferrer">Paper</a>{% endif %}
       {% if publication.projecturl %}<a class="publication-card__action" href="{{ base_path }}{{ publication.projecturl }}">Project</a>{% endif %}
+      {% if publication.bibtex %}<button class="publication-card__action publication-card__bibtex" type="button" data-bibtex-id="bibtex-{{ publication.slug }}">BibTeX</button>{% endif %}
     </div>
+    {% if publication.bibtex %}<script id="bibtex-{{ publication.slug }}" type="text/plain">{{ publication.bibtex | strip }}</script>{% endif %}
   </div>
 </article>

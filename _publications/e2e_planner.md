@@ -12,6 +12,13 @@ equal_contributors:
   - 'Y. Zhan'
 summary: 'A self-supervised UAV planning framework that combines learned perception with differentiable trajectory optimization and adaptive time allocation.'
 paperurl: 'https://arxiv.org/abs/2504.04289'
+bibtex: |
+  @inproceedings{jiang2025selfsupervised,
+    author    = {Jiang, Yufei and Zhan, Yuanzhu and Gupta, Harsh Vardhan and Borde, Chinmay and Geng, Junyi},
+    title     = {A Self-Supervised Learning Approach with Differentiable Optimization for UAV Trajectory Planning},
+    booktitle = {2026 IEEE International Conference on Robotics and Automation (ICRA)},
+    year      = {2026}
+  }
 projecturl: /projects/e2e_planner
 citation: 'Y. Jiang, Y. Zhan, H. V. Gupta, C. Borde, and J. Geng, “A Self-Supervised Learning Approach with Differentiable Optimization for UAV Trajectory Planning,” in Proceedings of the 2026 IEEE International Conference on Robotics and Automation (ICRA), 2026.'
 ---
