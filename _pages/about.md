@@ -12,10 +12,13 @@ Hello! I'm Yufei Jiang. I am currently a Ph.D. candidate in the Department of Ae
 Research Interest
 ======
 
-My research focuses on **aerial robotics and embodied autonomy**, with an emphasis on enabling aerial robots to perceive, reason, and physically interact with complex real-world environments. I am particularly interested in bridging the gap between high-level intelligence and low-level robotic execution through tightly integrated **perception, learning, planning, state estimation, and control**.
+My research interests lie broadly in **robotics and embodied intelligence**, with a particular focus on aerial robotic systems. I am interested in enabling robots to perceive, reason, learn, and physically interact with complex real-world environments in an autonomous and reliable manner.
 
-A major direction of my research is **aerial manipulation in unstructured environments**. I study how aerial robots equipped with robotic manipulators can perform precise and reliable physical interaction despite floating-base dynamics, limited onboard sensing, environmental disturbances, and uncertainty. My work explores whole-body control, perception-aware motion generation, robust state estimation, and learning-based policies for manipulation beyond controlled laboratory settings.
+A central theme of my research is **aerial manipulation**, where aerial robots move beyond passive sensing to actively interact with their surroundings. My work considers the challenges that arise when perception, planning, and control must operate together under uncertainty, limited sensing, and dynamic conditions. I am also interested in learning-based approaches that help robots adapt to new tasks and environments while maintaining safe and robust behavior.
 
-I am also interested in **learning-based embodied intelligence**, including generative visuomotor policies and vision-language-action models. In particular, I aim to develop hierarchical robotic systems in which high-level models reason about tasks and semantic goals, perception-conditioned policies generate feasible behaviors from local observations, and model-based controllers ensure safe and dynamically consistent execution.
+More broadly, my goal is to develop intelligent robotic systems that connect advances in algorithms with capable physical hardware. I am interested in both fundamental research and practical applications that make robots more versatile, dependable, and useful in the real world.
 
-More broadly, my long-term goal is to develop robotic systems that combine **intelligent algorithms with capable hardware** and can operate reliably in the physical world. Beyond aerial robots, I am interested in robot design and general-purpose embodied systems that can extend human capabilities and make robotics increasingly practical, versatile, and accessible.
+Beyond Research 🌱
+======
+
+When I'm not working on robots, you can usually find me on the court playing **badminton🏸, basketball🏀, tennis🎾**. I also love **cooking**🍳—trying out new recipes, experimenting in the kitchen, and sharing good food with friends . I'm always happy to play a game or swap recipe ideas!
