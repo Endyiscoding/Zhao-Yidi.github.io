@@ -487,6 +487,11 @@
   h2 { margin: 0; }
 }
 
+.bibtex-dialog__line {
+  display: block;
+  box-sizing: border-box;
+}
+
 .bibtex-dialog__close {
   cursor: pointer;
   color: $text-color;

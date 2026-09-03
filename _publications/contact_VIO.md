@@ -15,10 +15,10 @@ summary: 'A fully onboard perception–control pipeline for accurate motion esti
 paperurl: 'https://arxiv.org/abs/2602.08251'
 bibtex: |
   @inproceedings{zhan2026contactaware,
-    author        = {Zhan, Yuanzhu and Jiang, Yufei and Cao, Muqing and Geng, Junyi},
-    title         = {Aerial Manipulation with Contact-Aware Onboard Perception and Hybrid Control},
-    booktitle = {2026 IEEE International Conference on Robotics and Automation (ICRA)},
-    year      = {2026}
+    author={Zhan, Yuanzhu and Jiang, Yufei and Cao, Muqing and Geng, Junyi},
+    title={Aerial Manipulation with Contact-Aware Onboard Perception and Hybrid Control},
+    booktitle={2026 IEEE International Conference on Robotics and Automation (ICRA)},
+    year={2026}
   }
 projecturl: /projects/contact_vio
 citation: 'Y. Zhan, Y. Jiang, M. Cao, and J. Geng, “Aerial Manipulation with Contact-Aware Onboard Perception and Hybrid Control,” in Proceedings of the 2026 IEEE International Conference on Robotics and Automation (ICRA), 2026.'

@@ -27,6 +27,6 @@
       {% if publication.projecturl %}<a class="publication-card__action" href="{{ base_path }}{{ publication.projecturl }}">Project</a>{% endif %}
       {% if publication.bibtex %}<button class="publication-card__action publication-card__bibtex" type="button" data-bibtex-id="bibtex-{{ publication.slug }}">BibTeX</button>{% endif %}
     </div>
-    {% if publication.bibtex %}<script id="bibtex-{{ publication.slug }}" type="text/plain">{{ publication.bibtex | strip }}</script>{% endif %}
+    {% if publication.bibtex %}<script id="bibtex-{{ publication.slug }}" type="application/json">{{ publication.bibtex | strip | jsonify }}</script>{% endif %}
   </div>
 </article>

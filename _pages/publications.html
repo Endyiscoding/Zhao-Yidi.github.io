@@ -25,10 +25,24 @@ document.addEventListener('DOMContentLoaded', function () {
   var dialog = document.getElementById('bibtex-dialog');
   var content = document.getElementById('bibtex-content');
   var copyButton = dialog.querySelector('.bibtex-dialog__copy');
+  var currentBibtex = '';
+
+  function renderBibtex(bibtex) {
+    content.textContent = '';
+    bibtex.split('\n').forEach(function (line) {
+      var indentation = line.match(/^\s*/)[0].length;
+      var lineElement = document.createElement('span');
+      lineElement.className = 'bibtex-dialog__line';
+      lineElement.style.paddingLeft = indentation + 'ch';
+      lineElement.textContent = line.trimStart();
+      content.appendChild(lineElement);
+    });
+  }
 
   document.querySelectorAll('.publication-card__bibtex').forEach(function (button) {
     button.addEventListener('click', function () {
-      content.textContent = document.getElementById(button.dataset.bibtexId).textContent.trim();
+      currentBibtex = JSON.parse(document.getElementById(button.dataset.bibtexId).textContent);
+      renderBibtex(currentBibtex);
       copyButton.textContent = 'Copy BibTeX';
       dialog.showModal();
     });
@@ -37,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
   dialog.querySelector('.bibtex-dialog__close').addEventListener('click', function () { dialog.close(); });
   dialog.addEventListener('click', function (event) { if (event.target === dialog) dialog.close(); });
   copyButton.addEventListener('click', function () {
-    var bibtex = content.textContent;
+    var bibtex = currentBibtex;
     if (navigator.clipboard && window.isSecureContext) {
       navigator.clipboard.writeText(bibtex).then(function () { copyButton.textContent = 'Copied!'; });
       return;
