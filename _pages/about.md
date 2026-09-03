@@ -21,4 +21,4 @@ More broadly, my goal is to develop intelligent robotic systems that connect adv
 Beyond Research 🌱
 ======
 
-When I'm not working on robots, you can usually find me on the court playing **badminton🏸, basketball🏀, tennis🎾**. I also love **cooking**🍳—trying out new recipes, experimenting in the kitchen, and sharing good food with friends . I'm always happy to play a game or swap recipe ideas!
+When I'm not working on robots, you can usually find me on the court playing **badminton🏸, basketball🏀 and tennis🎾**. I also love **cooking**🍳—trying out new recipes, experimenting in the kitchen, and sharing good food with friends . I'm always happy to play a game or swap recipe ideas!
