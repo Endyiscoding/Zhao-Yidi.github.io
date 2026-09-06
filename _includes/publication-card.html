@@ -2,7 +2,7 @@
 <article class="publication-card">
   <div class="publication-card__year">
     <span>{{ publication.date | date: "%Y" }}</span>
-    {% if publication.venue contains "ICRA" %}<small>ICRA</small>{% endif %}
+    {% if publication.venue contains "ICRA" %}<small>ICRA</small>{% elsif publication.venue contains "CoRL" %}<small>CoRL</small>{% endif %}
   </div>
 
   <div class="publication-card__body">
