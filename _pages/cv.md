@@ -10,7 +10,7 @@ redirect_from:
 
 {% include base_path %}
 
-<div class="cv-toolbar"><h1 class="page__title">Curriculum vitae</h1><button class="academic-button academic-button--outline" type="button" data-print-cv>Print / Save PDF <span aria-hidden="true">↗</span></button></div>
+<div class="cv-toolbar"><h1 class="page__title">Curriculum vitae</h1></div>
 <div class="cv">
   <header class="cv__intro">
     <p class="cv-print-name">{{ site.name }} · {{ site.author.email }}</p>

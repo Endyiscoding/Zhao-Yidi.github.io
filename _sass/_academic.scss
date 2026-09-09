@@ -310,7 +310,7 @@ body.academic-site {
 @media print {
   *, *::before, *::after { transition: none !important; animation: none !important; }
   body.academic-site { padding: 0; background: white; font-size: 10pt; color: black; }
-  .academic-site .masthead, .academic-site .sidebar, .academic-site .page__footer, .skip-link, .cv-toolbar button { display: none !important; }
+  .academic-site .masthead, .academic-site .sidebar, .academic-site .page__footer, .skip-link { display: none !important; }
   .academic-site #main, .academic-site #main:not(.home) { display: block; max-width: none; margin: 0; padding: 0; }
   .academic-site .cv__intro { padding: 0 0 16px; margin-bottom: 20px; background: white !important; border: 0; border-bottom: 1px solid #bbb; }
   .cv-print-name { display: block; font-weight: 700; }

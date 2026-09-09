@@ -7,7 +7,6 @@
 - 论文数据：`_publications/`。设置 `selected: true` 和 `selected_order` 可控制首页代表论文与排序；`image`、`image_alt` 用于论文图示。
 - 论文资源：`projecturl` 支持站内路径和完整外部网址；`codeurl` 显示代码仓库链接。AM-Bench 图示来自其[官方项目网站](https://ambench.github.io/static/images/system-architecture.png)。
 - 项目内容：`_teaching/`；导航：`_data/navigation.yml`；联系方式：`_config.yml`。
-- CV 页的 **Print / Save PDF** 打开浏览器打印窗口，可选择保存为 PDF。
 
 本地运行：`bundle exec jekyll serve --host 127.0.0.1`，然后访问 `http://127.0.0.1:4000`。构建检查：`bundle exec jekyll build`。
 
