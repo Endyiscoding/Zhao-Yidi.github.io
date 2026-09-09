@@ -2,7 +2,7 @@
 title: "Learning-Based UAV Trajectory Planning"
 collection: teaching
 type: "Research Project"
-permalink: /projects/e2e_planner
+permalink: /projects/e2e_planner/
 venue: Penn State University
 date: 2024-08-01
 excerpt: "A self-supervised planning pipeline that combines learned depth perception with differentiable trajectory optimization for robust UAV navigation."

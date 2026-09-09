@@ -2,7 +2,7 @@
 title: "Fast Exploration with UAV Swarms"
 collection: teaching
 type: "Undergraduate Thesis"
-permalink: /projects/undergrad-thesis
+permalink: /projects/undergrad-thesis/
 venue: Nankai University
 date: 2024-06-01
 excerpt: "A multi-UAV exploration framework that allocates unknown regions while accounting for obstacle distribution and local environmental complexity."

@@ -8,10 +8,10 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Yufei Jiang / Homepage"
+title                    : "Yufei Jiang"
 title_separator          : "-"
 name                     : &name "Yufei Jiang"
-description              : &description "personal description"
+description              : &description "Yufei Jiang is a Ph.D. candidate at Penn State working on aerial manipulation, robot perception, and learning-based planning."
 url                      : "https://Jiang-Yufei.github.io" # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "Jiang-Yufei/Jiang-Yufei.github.io"
@@ -24,8 +24,8 @@ author:
   avatar           : "profile.jpg"
   name             : "Yufei Jiang"
   pronouns         : # example: "she/her"  
-  bio              : "Ph.D. Student in Aerial Robotics"
-  location         : "Pennsylvania"
+  bio              : "Ph.D. Candidate · Aerial Robotics"
+  location         : "University Park, PA"
   employer         : "Penn State University"
   uri              : # URL
   email            : "yosefjiang@gmail.com" 
@@ -253,7 +253,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
+      share: false
       comments: true
   # _publications
   - scope:

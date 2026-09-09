@@ -2,6 +2,10 @@
 
 title: "Aerial Manipulation with Contact-Aware Onboard Perception and Hybrid Control"
 collection: publications
+selected: true
+selected_order: 2
+image: /images/Project/contact_vio/pipeline.png
+image_alt: "Contact-aware onboard perception and hybrid control pipeline"
 category: conferences
 permalink: /publication/contact-aware-aerial-manipulation
 excerpt: ''
@@ -20,7 +24,7 @@ bibtex: |
     booktitle={2026 IEEE International Conference on Robotics and Automation (ICRA)},
     year={2026}
   }
-projecturl: /projects/contact_vio
+projecturl: /projects/contact_vio/
 citation: 'Y. Zhan, Y. Jiang, M. Cao, and J. Geng, “Aerial Manipulation with Contact-Aware Onboard Perception and Hybrid Control,” in Proceedings of the 2026 IEEE International Conference on Robotics and Automation (ICRA), 2026.'
 ---
 

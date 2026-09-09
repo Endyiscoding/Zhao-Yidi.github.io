@@ -1,5 +1,14 @@
 {% assign publication = include.publication %}
-<article class="publication-card">
+{% assign project_url = publication.projecturl %}
+{% if project_url and project_url != '' %}
+  {% unless project_url contains '://' %}{% assign project_url = project_url | prepend: base_path %}{% endunless %}
+{% endif %}
+<article class="publication-card{% if publication.image %} publication-card--illustrated{% endif %}">
+  {% if publication.image %}
+  <a class="publication-card__image" href="{% if publication.projecturl %}{{ project_url }}{% else %}{{ publication.paperurl }}{% endif %}">
+    <img src="{{ base_path }}{{ publication.image }}" alt="{{ publication.image_alt | escape }}" loading="lazy">
+  </a>
+  {% endif %}
   <div class="publication-card__year">
     <span>{{ publication.date | date: "%Y" }}</span>
     {% if publication.venue contains "ICRA" %}<small>ICRA</small>{% elsif publication.venue contains "CoRL" %}<small>CoRL</small>{% endif %}
@@ -24,7 +33,8 @@
 
     <div class="publication-card__actions">
       {% if publication.paperurl %}<a class="publication-card__action publication-card__action--primary" href="{{ publication.paperurl }}" target="_blank" rel="noopener noreferrer">Paper</a>{% endif %}
-      {% if publication.projecturl %}<a class="publication-card__action" href="{{ base_path }}{{ publication.projecturl }}">Project</a>{% endif %}
+      {% if publication.projecturl %}<a class="publication-card__action" href="{{ project_url }}">Project</a>{% endif %}
+      {% if publication.codeurl %}<a class="publication-card__action" href="{{ publication.codeurl }}" target="_blank" rel="noopener noreferrer">Code</a>{% endif %}
       {% if publication.bibtex %}<button class="publication-card__action publication-card__bibtex" type="button" data-bibtex-id="bibtex-{{ publication.slug }}">BibTeX</button>{% endif %}
     </div>
     {% if publication.bibtex %}<script id="bibtex-{{ publication.slug }}" type="application/json">{{ publication.bibtex | strip | jsonify }}</script>{% endif %}

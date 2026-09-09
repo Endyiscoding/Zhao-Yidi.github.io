@@ -1,3 +1,18 @@
+# Yufei Jiang · Academic website
+
+网站保留 Jekyll / GitHub Pages 构建方式，使用独立的 `_sass/_academic.scss` 管理新版样式。
+
+- 首页内容：`_pages/about.md`；简历：`_pages/cv.md`。
+- 首页动态：`_data/news.yml`，新消息放在最上方，按时间倒序维护；日期采用 `YYYY-MM`，正文支持 Markdown 链接与加粗。首页默认展示前 10 条，超过 10 条时自动出现 **View earlier news**，点击可展开或收起所有更早动态；无需删除历史记录，也不依赖 JavaScript。
+- 论文数据：`_publications/`。设置 `selected: true` 和 `selected_order` 可控制首页代表论文与排序；`image`、`image_alt` 用于论文图示。
+- 论文资源：`projecturl` 支持站内路径和完整外部网址；`codeurl` 显示代码仓库链接。AM-Bench 图示来自其[官方项目网站](https://ambench.github.io/static/images/system-architecture.png)。
+- 项目内容：`_teaching/`；导航：`_data/navigation.yml`；联系方式：`_config.yml`。
+- CV 页的 **Print / Save PDF** 打开浏览器打印窗口，可选择保存为 PDF。
+
+本地运行：`bundle exec jekyll serve --host 127.0.0.1`，然后访问 `http://127.0.0.1:4000`。构建检查：`bundle exec jekyll build`。
+
+---
+
 # Academic Pages
 **Academic Pages is a Github Pages template for academic websites.**
 

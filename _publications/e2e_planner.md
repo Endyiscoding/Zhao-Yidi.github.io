@@ -1,6 +1,10 @@
 ---
 title: "A Self-Supervised Learning Approach with Differentiable Optimization for UAV Trajectory Planning"
 collection: publications
+selected: true
+selected_order: 1
+image: /images/Project/e2e_planner/e2e_pipeline.png
+image_alt: "Learning-based perception and differentiable trajectory optimization pipeline"
 category: conferences
 permalink: /publication/uav-trajectory-planning
 excerpt: ''
@@ -19,7 +23,7 @@ bibtex: |
     booktitle={2026 IEEE International Conference on Robotics and Automation (ICRA)},
     year={2026}
   }
-projecturl: /projects/e2e_planner
+projecturl: /projects/e2e_planner/
 citation: 'Y. Jiang, Y. Zhan, H. V. Gupta, C. Borde, and J. Geng, “A Self-Supervised Learning Approach with Differentiable Optimization for UAV Trajectory Planning,” in Proceedings of the 2026 IEEE International Conference on Robotics and Automation (ICRA), 2026.'
 ---
 

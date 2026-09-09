@@ -10,8 +10,10 @@ redirect_from:
 
 {% include base_path %}
 
+<div class="cv-toolbar"><h1 class="page__title">Curriculum vitae</h1><button class="academic-button academic-button--outline" type="button" data-print-cv>Print / Save PDF <span aria-hidden="true">↗</span></button></div>
 <div class="cv">
   <header class="cv__intro">
+    <p class="cv-print-name">{{ site.name }} · {{ site.author.email }}</p>
     <p class="cv__eyebrow">Aerial Robotics · Embodied Autonomy</p>
     <h2 class="cv__headline">Ph.D. Candidate <span>in Aerospace Engineering</span></h2>
     <p class="cv__summary">Building autonomous aerial robots that can <strong>perceive</strong>, <strong>plan</strong>, and <strong>physically interact</strong> with the real world.</p>
@@ -110,7 +112,8 @@ redirect_from:
               <p class="cv-publication__venue"><i>{{ post.venue }}</i> · {{ post.date | date: "%Y" }}</p>
               <div class="cv-publication__links">
                 {% if post.paperurl %}<a href="{{ post.paperurl }}">Paper</a>{% endif %}
-                {% if post.projecturl %}<a href="{{ base_path }}{{ post.projecturl }}">Project</a>{% endif %}
+                {% if post.projecturl %}<a href="{% unless post.projecturl contains '://' %}{{ base_path }}{% endunless %}{{ post.projecturl }}">Project</a>{% endif %}
+                {% if post.codeurl %}<a href="{{ post.codeurl }}">Code</a>{% endif %}
               </div>
             </div>
           </article>

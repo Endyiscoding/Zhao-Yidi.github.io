@@ -2,7 +2,7 @@
 title: "Contact-Aware Aerial Manipulation"
 collection: teaching
 type: "Research Project"
-permalink: /projects/contact_vio
+permalink: /projects/contact_vio/
 venue: Penn State University
 date: 2025-09-15
 excerpt: "A fully onboard perception and control system that enables an aerial manipulator to approach a target, establish contact, and regulate interaction forces without motion capture."

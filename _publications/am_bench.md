@@ -1,12 +1,20 @@
 ---
 title: "AM-Bench: A Modular Simulation Suite and Benchmark for Aerial Manipulation Policy Learning"
 collection: publications
+selected: true
+selected_order: 3
+project_preview: true
+project_title: "AM-Bench: Aerial Manipulation Benchmark"
+image: /images/Project/am_bench/system-architecture.png
+image_alt: "AM-Bench modular aerial manipulation simulation and learning architecture"
 category: conferences
 date: 2026-09-01
 venue: 'Conference on Robot Learning (CoRL)'
 authors: 'Y. Wang, D. Lee, X. Guo, Y. Zhan, Y. Jiang, B. Saravanan, M. Cao, J. Xie, C. Mao, S. Scherer, J. Geng, and G. Shi'
 summary: 'A modular simulation suite and benchmark for studying how aerial-robot embodiment, low-level control, disturbances, and policy design jointly affect manipulation performance.'
 paperurl: 'https://arxiv.org/abs/2609.00641'
+projecturl: 'https://ambench.github.io/'
+codeurl: 'https://github.com/ambench/ambench'
 bibtex: |
   @inproceedings{wang2026ambenchmodularsimulationsuite,
         title={AM-Bench: A Modular Simulation Suite and Benchmark for Aerial Manipulation Policy Learning}, 

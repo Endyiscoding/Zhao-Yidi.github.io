@@ -1,0 +1,61 @@
+<dialog class="bibtex-dialog" id="bibtex-dialog" aria-labelledby="bibtex-dialog-title">
+  <div class="bibtex-dialog__header">
+    <h2 id="bibtex-dialog-title">BibTeX</h2>
+    <button class="bibtex-dialog__close" type="button" aria-label="Close BibTeX dialog">&times;</button>
+  </div>
+  <pre><code id="bibtex-content"></code></pre>
+  <button class="bibtex-dialog__copy" type="button" aria-live="polite">Copy BibTeX</button>
+</dialog>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var dialog = document.getElementById('bibtex-dialog');
+  var content = document.getElementById('bibtex-content');
+  var copyButton = dialog.querySelector('.bibtex-dialog__copy');
+  var currentBibtex = '';
+
+  function renderBibtex(bibtex) {
+    content.textContent = '';
+    bibtex.split('\n').forEach(function (line) {
+      var indentation = line.match(/^\s*/)[0].length;
+      var lineElement = document.createElement('span');
+      lineElement.className = 'bibtex-dialog__line';
+      lineElement.style.paddingLeft = indentation + 'ch';
+      lineElement.textContent = line.trimStart();
+      content.appendChild(lineElement);
+    });
+  }
+
+  document.querySelectorAll('.publication-card__bibtex').forEach(function (button) {
+    button.addEventListener('click', function () {
+      currentBibtex = JSON.parse(document.getElementById(button.dataset.bibtexId).textContent);
+      renderBibtex(currentBibtex);
+      copyButton.textContent = 'Copy BibTeX';
+      dialog.showModal();
+    });
+  });
+
+  dialog.querySelector('.bibtex-dialog__close').addEventListener('click', function () { dialog.close(); });
+  dialog.addEventListener('click', function (event) { if (event.target === dialog) dialog.close(); });
+  copyButton.addEventListener('click', function () {
+    var bibtex = currentBibtex;
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(bibtex).then(function () {
+        copyButton.textContent = 'Copied!';
+      }).catch(function () {
+        copyButton.textContent = 'Copy unavailable — select text above';
+      });
+      return;
+    }
+    var textArea = document.createElement('textarea');
+    textArea.value = bibtex;
+    textArea.style.position = 'fixed';
+    textArea.style.opacity = '0';
+    document.body.appendChild(textArea);
+    textArea.select();
+    var copied = document.execCommand('copy');
+    textArea.remove();
+    copyButton.textContent = copied ? 'Copied!' : 'Copy unavailable — select text above';
+  });
+});
+</script>

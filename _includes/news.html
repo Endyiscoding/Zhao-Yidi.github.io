@@ -1,0 +1,26 @@
+{% if site.data.news and site.data.news.size > 0 %}
+<section class="home-section home-news" id="news" aria-labelledby="news-title">
+  <div class="section-heading">
+    <h2 id="news-title">Latest news</h2>
+  </div>
+  <ul class="news-list" aria-label="Latest news">
+    {% for item in site.data.news limit:10 %}
+      {% include news-item.html item=item %}
+    {% endfor %}
+  </ul>
+  {% if site.data.news.size > 10 %}
+  <details class="news-history">
+    <summary class="news-history__toggle">
+      <span class="news-history__show">View earlier news</span>
+      <span class="news-history__hide">Hide earlier news</span>
+      <span class="news-history__count">({{ site.data.news.size | minus: 10 }})</span>
+    </summary>
+    <ul class="news-list" aria-label="Earlier news">
+      {% for item in site.data.news offset:10 %}
+        {% include news-item.html item=item %}
+      {% endfor %}
+    </ul>
+  </details>
+  {% endif %}
+</section>
+{% endif %}

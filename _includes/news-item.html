@@ -1,0 +1,7 @@
+<li class="news-item">
+  <time class="news-item__date" datetime="{{ include.item.date }}">{{ include.item.date | split: '-' | reverse | join: '/' }}</time>
+  <div class="news-item__body">
+    <span class="news-item__emoji" aria-hidden="true">{{ include.item.emoji }}</span>
+    <div class="news-item__text">{{ include.item.text | markdownify }}</div>
+  </div>
+</li>

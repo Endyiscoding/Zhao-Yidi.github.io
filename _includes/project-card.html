@@ -1,8 +1,13 @@
 {% assign project = include.project %}
+{% assign project_title = project.project_title | default: project.title %}
+{% assign project_url = project.project_preview_url | default: project.projecturl | default: project.url %}
+{% unless project_url contains '://' %}{% assign project_url = project_url | prepend: base_path %}{% endunless %}
+{% assign project_image = project.teaser | default: project.image %}
+{% assign project_summary = project.summary | default: project.excerpt %}
 <article class="project-card">
-  <a class="project-card__media" href="{{ base_path }}{{ project.url }}" aria-label="View {{ project.title | strip_html }}">
-    {% if project.teaser %}
-      <img src="{{ base_path }}{{ project.teaser }}" alt="{{ project.title | strip_html }} project preview" loading="lazy">
+  <a class="project-card__media" href="{{ project_url }}" aria-label="View {{ project_title | strip_html | escape }}">
+    {% if project_image %}
+      <img src="{{ base_path }}{{ project_image }}" alt="{{ project_title | strip_html | escape }} project preview" loading="lazy">
     {% else %}
       <span class="project-card__placeholder" aria-hidden="true">
         <i class="fas fa-helicopter"></i>
@@ -11,12 +16,12 @@
   </a>
 
   <div class="project-card__body">
-    <p class="project-card__meta">{{ project.type }} · {{ project.date | date: "%Y" }}</p>
-    <h2 class="project-card__title"><a href="{{ base_path }}{{ project.url }}">{{ project.title }}</a></h2>
-    <p class="project-card__summary">{{ project.excerpt | markdownify | strip_html }}</p>
+    <p class="project-card__meta">{{ project.type | default: 'Research Project' }} · {{ project.date | date: "%Y" }}</p>
+    <h2 class="project-card__title"><a href="{{ project_url }}">{{ project_title }}</a></h2>
+    <p class="project-card__summary">{{ project_summary | markdownify | strip_html }}</p>
 
     <div class="project-card__links">
-      <a href="{{ base_path }}{{ project.url }}">View project <span aria-hidden="true">→</span></a>
+      <a href="{{ project_url }}">View project <span aria-hidden="true">→</span></a>
       {% if project.paperurl %}<a href="{{ project.paperurl }}">Paper</a>{% endif %}
       {% if project.codeurl %}<a href="{{ project.codeurl }}">Code</a>{% endif %}
     </div>
