@@ -39,7 +39,7 @@ The system brings learning and optimization together:
 ## Demonstration video
 
 <div class="project-video">
-  <video controls preload="metadata" playsinline poster="/images/Project/e2e_planner/e2e_pipeline.png" aria-label="Learning-based UAV trajectory planning demonstration">
+  <video controls preload="metadata" playsinline poster="/images/Project/e2e_planner/e2e-poster.jpg" aria-label="Learning-based UAV trajectory planning demonstration">
     <source src="/images/Project/e2e_planner/ICRA2026_e2e.mp4" type="video/mp4">
     Your browser does not support embedded video. <a href="/images/Project/e2e_planner/ICRA2026_e2e.mp4">Download the demonstration video</a>.
   </video>

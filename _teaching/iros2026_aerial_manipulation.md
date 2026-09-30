@@ -37,7 +37,7 @@ Outdoor aerial manipulation must handle visual changes and disturbances while co
 ## Outdoor demonstration
 
 <div class="project-video">
-  <video controls preload="metadata" playsinline poster="/images/Project/iros2026/am-platform.jpg" aria-label="Outdoor aerial manipulation demonstration">
+  <video controls preload="metadata" playsinline poster="/images/Project/iros2026/iros-video-poster.jpg" aria-label="Outdoor aerial manipulation demonstration">
     <source src="/images/Project/iros2026/MPC_outdoor_hero.mp4" type="video/mp4">
     Your browser does not support embedded video. <a href="/images/Project/iros2026/MPC_outdoor_hero.mp4">Download the demonstration video</a>.
   </video>
