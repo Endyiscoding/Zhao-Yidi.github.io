@@ -39,7 +39,7 @@ We connect onboard perception directly to interaction control through three comp
 ## Demonstration video
 
 <div class="project-video">
-  <video controls preload="metadata" playsinline poster="/images/Project/contact_vio/am-vio-poster.jpg" aria-label="Contact-aware aerial manipulation demonstration">
+  <video controls preload="none" playsinline poster="/images/Project/contact_vio/am-vio-poster.jpg" aria-label="Contact-aware aerial manipulation demonstration">
     <source src="/images/Project/contact_vio/AM_VIO.mp4" type="video/mp4">
     Your browser does not support embedded video. <a href="/images/Project/contact_vio/AM_VIO.mp4">Download the demonstration video</a>.
   </video>
