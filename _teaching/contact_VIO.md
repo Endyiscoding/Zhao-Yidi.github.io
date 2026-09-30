@@ -7,6 +7,7 @@ venue: Penn State University
 date: 2025-09-15
 excerpt: "A fully onboard perception and control system that enables an aerial manipulator to approach a target, establish contact, and regulate interaction forces without motion capture."
 teaser: /images/Project/contact_vio/pipeline.png
+preview_video: /images/Project/contact_vio/Contact_trim.mp4
 paperurl: https://arxiv.org/abs/2602.08251
 ---
 
@@ -34,6 +35,15 @@ We connect onboard perception directly to interaction control through three comp
   <img src="/images/Project/contact_vio/pipeline.png" alt="Contact-aware aerial manipulation perception and control pipeline">
   <figcaption>Overview of the onboard perception–control pipeline.</figcaption>
 </figure>
+
+## Demonstration video
+
+<div class="project-video">
+  <video controls preload="metadata" playsinline poster="/images/Project/contact_vio/pipeline.png" aria-label="Contact-aware aerial manipulation demonstration">
+    <source src="/images/Project/contact_vio/AM_VIO.mp4" type="video/mp4">
+    Your browser does not support embedded video. <a href="/images/Project/contact_vio/AM_VIO.mp4">Download the demonstration video</a>.
+  </video>
+</div>
 
 ## Results
 

@@ -2,8 +2,9 @@
 title: "A Self-Supervised Learning Approach with Differentiable Optimization for UAV Trajectory Planning"
 collection: publications
 selected: true
-selected_order: 1
+selected_order: 2
 image: /images/Project/e2e_planner/e2e_pipeline.png
+preview_video: /images/Project/e2e_planner/e2e_trim.mp4
 image_alt: "Learning-based perception and differentiable trajectory optimization pipeline"
 category: conferences
 permalink: /publication/uav-trajectory-planning

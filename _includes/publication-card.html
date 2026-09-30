@@ -6,7 +6,11 @@
 <article class="publication-card{% if publication.image %} publication-card--illustrated{% endif %}">
   {% if publication.image %}
   <a class="publication-card__image" href="{% if publication.projecturl %}{{ project_url }}{% else %}{{ publication.paperurl }}{% endif %}">
-    <img src="{{ base_path }}{{ publication.image }}" alt="{{ publication.image_alt | escape }}" loading="lazy">
+    {% if publication.preview_video %}
+      <video class="preview-video" data-preview-video muted loop playsinline preload="none" poster="{{ base_path }}{{ publication.image }}" aria-hidden="true"><source data-src="{{ base_path }}{{ publication.preview_video }}" type="video/mp4"></video>
+    {% else %}
+      <img src="{{ base_path }}{{ publication.image }}" alt="{{ publication.image_alt | escape }}" loading="lazy">
+    {% endif %}
   </a>
   {% endif %}
   <div class="publication-card__year">

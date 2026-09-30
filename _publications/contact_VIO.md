@@ -3,8 +3,9 @@
 title: "Aerial Manipulation with Contact-Aware Onboard Perception and Hybrid Control"
 collection: publications
 selected: true
-selected_order: 2
+selected_order: 3
 image: /images/Project/contact_vio/pipeline.png
+preview_video: /images/Project/contact_vio/Contact_trim.mp4
 image_alt: "Contact-aware onboard perception and hybrid control pipeline"
 category: conferences
 permalink: /publication/contact-aware-aerial-manipulation

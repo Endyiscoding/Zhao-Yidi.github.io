@@ -7,6 +7,7 @@ venue: Penn State University
 date: 2024-08-01
 excerpt: "A self-supervised planning pipeline that combines learned depth perception with differentiable trajectory optimization for robust UAV navigation."
 teaser: /images/Project/e2e_planner/e2e_pipeline.png
+preview_video: /images/Project/e2e_planner/e2e_trim.mp4
 paperurl: https://arxiv.org/abs/2504.04289
 ---
 
@@ -34,6 +35,15 @@ The system brings learning and optimization together:
   <img src="/images/Project/e2e_planner/e2e_pipeline.png" alt="Self-supervised UAV trajectory planning pipeline">
   <figcaption>Overview of the learning and differentiable optimization pipeline.</figcaption>
 </figure>
+
+## Demonstration video
+
+<div class="project-video">
+  <video controls preload="metadata" playsinline poster="/images/Project/e2e_planner/e2e_pipeline.png" aria-label="Learning-based UAV trajectory planning demonstration">
+    <source src="/images/Project/e2e_planner/ICRA2026_e2e.mp4" type="video/mp4">
+    Your browser does not support embedded video. <a href="/images/Project/e2e_planner/ICRA2026_e2e.mp4">Download the demonstration video</a>.
+  </video>
+</div>
 
 ## Results
 

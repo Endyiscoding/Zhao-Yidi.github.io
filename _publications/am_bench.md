@@ -2,7 +2,7 @@
 title: "AM-Bench: A Modular Simulation Suite and Benchmark for Aerial Manipulation Policy Learning"
 collection: publications
 selected: true
-selected_order: 3
+selected_order: 4
 project_preview: true
 project_title: "AM-Bench: Aerial Manipulation Benchmark"
 image: /images/Project/am_bench/system-architecture.png

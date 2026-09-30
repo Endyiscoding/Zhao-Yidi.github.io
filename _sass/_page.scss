@@ -149,6 +149,26 @@
   }
 }
 
+.project-figure-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: 1.25em;
+
+  .project-figure {
+    margin: 0;
+  }
+}
+
+.project-video video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  background: #000;
+}
+
+
+
 /*
    Curriculum vitae
    ========================================================================== */
