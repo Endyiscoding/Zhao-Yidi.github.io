@@ -7,7 +7,7 @@ venue: Penn State University
 date: 2024-08-01
 excerpt: "A self-supervised planning pipeline that combines learned depth perception with differentiable trajectory optimization for robust UAV navigation."
 teaser: /images/Project/e2e_planner/e2e_pipeline.png
-preview_video: /images/Project/e2e_planner/e2e_trim.mp4
+preview_video: /images/Project/e2e_planner/e2e_preview.mp4
 paperurl: https://arxiv.org/abs/2504.04289
 ---
 

@@ -7,7 +7,7 @@ venue: "MoMA.v5 Workshop at IROS 2026"
 date: 2026-09-24
 excerpt: "An outdoor aerial manipulation system combining onboard LiDAR–inertial odometry, a demonstration-trained Diffusion Policy, and whole-body model predictive control."
 teaser: /images/Project/iros2026/am-platform.jpg
-preview_video: /images/Project/iros2026/MPC_outdoor_hero.mp4
+preview_video: /images/Project/iros2026/iros_preview.mp4
 paperurl: https://arxiv.org/pdf/2609.30521
 ---
 

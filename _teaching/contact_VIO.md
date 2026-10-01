@@ -7,7 +7,7 @@ venue: Penn State University
 date: 2025-09-15
 excerpt: "A fully onboard perception and control system that enables an aerial manipulator to approach a target, establish contact, and regulate interaction forces without motion capture."
 teaser: /images/Project/contact_vio/pipeline.png
-preview_video: /images/Project/contact_vio/Contact_trim.mp4
+preview_video: /images/Project/contact_vio/contact_preview.mp4
 paperurl: https://arxiv.org/abs/2602.08251
 ---
 

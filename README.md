@@ -46,7 +46,7 @@ Open <http://127.0.0.1:4000>.
 
 ## Project videos
 
-Full demonstration videos are stored beside their project images in `images/Project/` and use HTML5 video controls on the project pages. Short previews use the `preview_video` field in project and publication front matter. They play muted and loop only while visible; visitors who request reduced motion see the static poster image instead.
+Full demonstration videos are stored beside their project images in `images/Project/` and use HTML5 video controls on the project pages. Compressed previews retain their original duration and resolution and use the `preview_video` field in project and publication front matter. They play muted and loop only while visible; visitors who request reduced motion see the static poster image instead.
 
 The IROS 2026 outdoor demonstration is `images/Project/iros2026/MPC_outdoor_hero.mp4`. The ICRA 2026 projects have their own full videos and shorter previews in `images/Project/contact_vio/` and `images/Project/e2e_planner/`. Keep video files compact to limit repository size and page bandwidth.
 

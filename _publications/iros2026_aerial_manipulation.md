@@ -4,7 +4,7 @@ collection: publications
 selected: true
 selected_order: 1
 image: /images/Project/iros2026/am-platform.jpg
-preview_video: /images/Project/iros2026/MPC_outdoor_hero.mp4
+preview_video: /images/Project/iros2026/iros_preview.mp4
 image_alt: "Aerial manipulation platform with onboard camera and robotic arm"
 category: workshops
 date: 2026-09-24
