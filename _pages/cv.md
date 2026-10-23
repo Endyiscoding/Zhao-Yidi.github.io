@@ -1,26 +1,7 @@
 ---
-layout: archive
-title: "CV"
+layout: null
 permalink: /cv/
-author_profile: true
-hide_title: true
+redirect_to: /#cv
 redirect_from:
   - /resume/
 ---
-
-{% include base_path %}
-<div class="cv-toolbar"><h1 class="page__title">Curriculum vitae</h1><a class="academic-button" href="{{ base_path }}/files/YidiZhao_CV.pdf">Download PDF ↗</a></div>
-<div class="cv">
-<header class="cv__intro">
-<p class="cv-print-name">Yidi Zhao · ymz5436@psu.edu</p>
-<p class="cv__eyebrow">Econometrics</p>
-<h2 class="cv__headline">Ph.D. Candidate <span>in Economics</span></h2>
-<p class="cv__summary">Department of Economics, Penn State University</p>
-<div class="cv__focus"><span>Model Misspecification</span><span>Measurement Error</span><span>Statistical Decision Theory</span></div>
-<p>Applied econometrics: industrial organization, health, and labor.</p>
-<nav class="cv__contact" aria-label="CV contact links"><a href="mailto:ymz5436@psu.edu">ymz5436@psu.edu</a><a href="tel:+18146990786">814-699-0786</a></nav>
-</header>
-<section class="cv__section" aria-labelledby="cv-education"><div class="cv__section-heading"><span>01</span><h2 id="cv-education">Education</h2></div><div class="cv__timeline"><article class="cv__item"><p class="cv__date">May 2027 (expected)</p><div class="cv__item-body"><h3>Ph.D. in Economics</h3><p class="cv__institution">Department of Economics, Penn State University</p></div></article><article class="cv__item"><p class="cv__date">July 2020</p><div class="cv__item-body"><h3>M.A. in Economics</h3><p class="cv__institution">National School of Development, Peking University</p></div></article><article class="cv__item"><p class="cv__date">July 2017</p><div class="cv__item-body"><h3>B.A. in Economics</h3><p class="cv__institution">School of Finance, Central University of Finance and Economics</p></div></article></div></section><section class="cv__section" aria-labelledby="cv-research"><div class="cv__section-heading"><span>02</span><h2 id="cv-research">Research</h2></div>
-<h3>Job Market Paper</h3><p><strong>Robust Inference under Local Distribution Shift in Wasserstein Distance</strong></p>
-<p>This paper studies the robustness of estimators to small departures of the true data-generating process from a reference model that defines the parameter of interest. We measure distributional departures using the quadratic Wasserstein distance, which captures movements of the observations in the sample space due to various factors like measurement errors. We consider local deviations within shrinking Wasserstein neighborhoods so that both sampling uncertainty and distributional bias matter asymptotically. Within this framework, we derive local asymptotic minimax bounds and construct estimators that attain the optimal trade-off between efficiency and robustness. Our results cover both regular parametric models and models defined by unconditional moment restrictions.</p><h3>Work in Progress</h3><p><strong>Multinomial Logistic Regression with Sample Selection</strong><br>Joint work with Onil Boussim (Cal Poly SLO)</p><p><strong>Nonparametric Tests for Proprietary Information at First-Price, Common Value Auctions</strong></p></section><section class="cv__section" aria-labelledby="cv-teaching"><div class="cv__section-heading"><span>03</span><h2 id="cv-teaching">Teaching</h2></div><div class="cv__timeline"><article class="cv__item"><p class="cv__date">Summer 2026</p><div class="cv__item-body"><h3>Instructor</h3><p class="cv__institution">Department of Economics, Penn State University</p><p>ECON 106: Statistical Foundations for Econometrics (undergraduate)</p></div></article><article class="cv__item"><p class="cv__date">Fall 2021 – Spring 2025</p><div class="cv__item-body"><h3>Teaching Assistant</h3><p class="cv__institution">Department of Economics, Penn State University</p><ul><li>ECON 454: Economics of Mergers (undergraduate)</li><li>ECON 402: Decision Making and Strategy in Economics (undergraduate)</li><li>MA ECON 510: Econometrics (graduate)</li></ul></div></article><article class="cv__item"><p class="cv__date">Spring 2019 / Fall 2018</p><div class="cv__item-body"><h3>Teaching Assistant</h3><p class="cv__institution">National School of Development, Peking University</p><ul><li>Advanced Microeconomics II (graduate core course), Spring 2019</li><li>Social Science Survey Data Analysis (undergraduate), Fall 2018</li></ul></div></article></div></section><section class="cv__section" aria-labelledby="cv-skills"><div class="cv__section-heading"><span>04</span><h2 id="cv-skills">Skills</h2></div><div class="cv__skill-groups"><div class="cv__skill-group"><h3>Programming</h3><div class="cv__tags"><span>Stata</span><span>Python</span><span>Julia</span></div></div><div class="cv__skill-group"><h3>Languages</h3><div class="cv__tags"><span>English (fluent)</span><span>Chinese (native)</span></div></div></div></section>
-<section class="cv__section" aria-labelledby="cv-references"><div class="cv__section-heading"><span>05</span><h2 id="cv-references">References</h2></div><div class="reference-grid"><article><h3>Marc Henry</h3><p>Professor of Economics<br>Penn State University</p><a href="mailto:marc.henry@psu.edu">marc.henry@psu.edu</a></article><article><h3>Andrés Aradillas-López</h3><p>Professor of Economics<br>Penn State University</p><a href="mailto:aza12@psu.edu">aza12@psu.edu</a></article><article><h3>Keisuke Hirano</h3><p>Professor of Economics<br>Penn State University</p><a href="mailto:kuh237@psu.edu">kuh237@psu.edu</a></article></div></section></div>

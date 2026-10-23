@@ -4,12 +4,12 @@ Personal academic website for Yidi Zhao, Ph.D. Candidate in Economics at Penn St
 
 - Home and introduction: `_pages/about.md`
 - Research and paper abstract: `_includes/yidi-research.html`
-- Research page: `_pages/publications.html` (published at `/research/`)
-- Online CV: `_pages/cv.md`
+- Research and CV are included on the homepage; old `/research/` and `/cv/` URLs redirect to homepage sections.
+- Introduction and concise teaching experience: `_pages/about.md`
 - Downloadable CV: `files/YidiZhao_CV.pdf`
 - Portrait: `images/yidi-zhao.jpg`
 - Contact and site settings: `_config.yml`
-- Navigation: `_data/navigation.yml`
+- Appearance: `_sass/_academic.scss` (single-page layout, no top navigation)
 
 Repository: [Endyiscoding/Zhao-Yidi.github.io](https://github.com/Endyiscoding/Zhao-Yidi.github.io)
 
