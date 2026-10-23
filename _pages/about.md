@@ -16,7 +16,7 @@ redirect_from:
     <p>Welcome!</p>
     <p>I am a Ph.D. candidate in Economics at Penn State University, and I am on the 2026-2027 economics job market.</p>
     <p>My research interests are in econometrics, with a focus on model misspecification, measurement error, and statistical decision theory. My applied interests include industrial organization, health, and labor.</p>
-    <p>You can find my <a id="cv" href="{{ base_path }}/files/YidiZhao_CV.pdf">CV here</a>.</p>
+    <p>You can find my <a id="cv" href="{{ base_path }}/files/YidiZhao_CV.pdf?v=d29981ab">CV here</a>.</p>
     <p class="economist-contact">Email: <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></p>
   </div>
 </section>
