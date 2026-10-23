@@ -8,7 +8,10 @@ vendor/
 local/
 
 # Ignore the Gemfile that is generated
-Gemfile.lock
+# Commit Gemfile.lock to keep local and CI dependencies consistent.
+
+.jekyll-cache/
+.DS_Store
 
 # Ingore files created by npm
 node_modules

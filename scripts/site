@@ -1,0 +1,27 @@
+#!/bin/sh
+set -eu
+cd "$(dirname "$0")/.."
+if command -v brew >/dev/null 2>&1; then
+  ruby_prefix="$(brew --prefix ruby@3.3)"
+  export PATH="$ruby_prefix/bin:$PATH"
+fi
+case "${1:-serve}" in
+  setup)
+    bundle config set --local path vendor/bundle
+    if [ "$(uname -s)" = Darwin ] && command -v xcrun >/dev/null 2>&1; then
+      sdk_path="$(xcrun --show-sdk-path)"
+      bundle config set --local build.eventmachine "--with-cxxflags=-I$sdk_path/usr/include/c++/v1"
+    fi
+    bundle install
+    ;;
+  serve)
+    exec bundle exec jekyll serve --host 127.0.0.1 --baseurl ""
+    ;;
+  build)
+    JEKYLL_ENV=production bundle exec jekyll build
+    ;;
+  *)
+    echo "Usage: sh scripts/site [setup|serve|build]" >&2
+    exit 1
+    ;;
+esac

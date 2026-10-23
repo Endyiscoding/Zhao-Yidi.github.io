@@ -1,43 +1,11 @@
 ---
 layout: archive
-title: "Publications"
-permalink: /publications/
+title: "Research"
+permalink: /research/
 author_profile: true
+redirect_from:
+  - /publications/
 ---
 
-{% include base_path %}
-
-<p class="page-intro">Research in aerial manipulation, robot perception, and learning-based planning. Papers, project details, and citations are collected below.</p>
-
-{% if site.author.googlescholar %}
-  <p class="publications-profile-link">Also available on <a href="{{ site.author.googlescholar }}">Google Scholar <span aria-hidden="true">→</span></a></p>
-{% endif %}
-
-{% include bibtex-dialog.html %}
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <div class="publications-section-heading">
-          <h2>{{ category[1].title }}</h2>
-          <span>{{ category[0] }}</span>
-        </div>
-        <div class="publication-list">
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include publication-card.html publication=post %}
-    {% endfor %}
-    {% if title_shown %}</div>{% endif %}
-  {% endfor %}
-{% else %}
-  <div class="publication-list">
-  {% for post in site.publications reversed %}
-    {% if post.title %}{% include publication-card.html publication=post %}{% endif %}
-  {% endfor %}
-  </div>
-{% endif %}
+<p class="page-intro">Econometrics: model misspecification, measurement error, and statistical decision theory. Applied interests include industrial organization, health, and labor.</p>
+{% include yidi-research.html %}

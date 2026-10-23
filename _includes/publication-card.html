@@ -28,7 +28,7 @@
         {% assign marked_author = author | append: '<sup class="equal-contribution-mark">*</sup>' %}
         {% assign highlighted_authors = highlighted_authors | replace: author, marked_author %}
       {% endfor %}
-      {% assign highlighted_authors = highlighted_authors | replace: 'Y. Jiang', '<strong class="publication-card__me">Y. Jiang</strong>' %}
+      {% assign highlighted_authors = highlighted_authors | replace: 'Yidi Zhao', '<strong class="publication-card__me">Yidi Zhao</strong>' %}
       <p class="publication-card__authors">{{ highlighted_authors }}</p>
       {% if publication.equal_contributors %}<p class="publication-card__equal-note"><span>*</span> Equal contribution</p>{% endif %}
     {% endif %}

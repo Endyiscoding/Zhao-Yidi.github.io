@@ -3,32 +3,32 @@
 # This config file is meant for settings that affect your entire site, values
 # which you are expected to set up once and rarely need to edit after that.
 # For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve -l -H localhost`. If you change this file, please restart the 
+# `jekyll serve -l -H localhost`. If you change this file, please restart the
 # server process.
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Yufei Jiang"
+title                    : "Yidi Zhao"
 title_separator          : "-"
-name                     : &name "Yufei Jiang"
-description              : &description "Yufei Jiang is a Ph.D. candidate at Penn State working on aerial manipulation, robot perception, and learning-based planning."
-url                      : "https://Jiang-Yufei.github.io" # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "Jiang-Yufei/Jiang-Yufei.github.io"
+name                     : &name "Yidi Zhao"
+description              : &description "Yidi Zhao is a Ph.D. candidate in Economics at Penn State University researching econometrics, model misspecification, measurement error, and statistical decision theory."
+url                      : "https://endyiscoding.github.io" # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
+baseurl                  : "/Zhao-Yidi.github.io" # the subpath of your site, e.g. "/blog"
+repository               : "Endyiscoding/Zhao-Yidi.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.jpg"
-  name             : "Yufei Jiang"
-  pronouns         : # example: "she/her"  
-  bio              : "Ph.D. Candidate · Aerial Robotics"
+  avatar           : "yidi-zhao.jpg"
+  name             : "Yidi Zhao"
+  pronouns         : # example: "she/her"
+  bio              : "Ph.D. Candidate · Economics"
   location         : "University Park, PA"
   employer         : "Penn State University"
   uri              : # URL
-  email            : "yosefjiang@gmail.com" 
+  email            : "ymz5436@psu.edu"
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
@@ -44,9 +44,9 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "Jiang-Yufei"
-  kaggle           : # Username  
-  stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
+  github           :
+  kaggle           : # Username
+  stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")
 
   # Social media
   bluesky          : # Replace this with you Bluesky username
@@ -58,7 +58,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : "yufei-jiang-54aa83303"
+  linkedin         :
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
@@ -79,7 +79,7 @@ publication_category:
   books:
     title: 'Books'
   manuscripts:
-    title: 'Journal Articles'    
+    title: 'Journal Articles'
   conferences:
     title: 'Conference Papers'
   workshops:
@@ -159,6 +159,13 @@ include:
   - _pages
   - files
 exclude:
+  - scripts
+  - DEPLOY.md
+  - Gemfile.lock
+  - markdown_generator
+  - talkmap
+  - talkmap.py
+  - talkmap.ipynb
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache
@@ -214,17 +221,8 @@ kramdown:
 
 # These settings control the types of collections used by the template
 collections:
-  teaching:
-    output: true
-    permalink: /:collection/:path/
   publications:
     output: false
-    permalink: /:collection/:path/
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
-  talks:
-    output: true
     permalink: /:collection/:path/
 
 
@@ -248,15 +246,6 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _teaching
-  - scope:
-      path: ""
-      type: teaching
-    values:
-      layout: single
-      author_profile: true
-      share: false
-      comments: true
   # _publications
   - scope:
       path: ""
@@ -266,23 +255,6 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
-  # _talks
-  - scope:
-      path: ""
-      type: talks
-    values:
-      layout: talk
-      author_profile: true
-      share: true
 
 
 # Sass/SCSS

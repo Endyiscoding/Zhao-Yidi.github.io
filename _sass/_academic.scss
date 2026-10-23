@@ -336,3 +336,11 @@ body.academic-site {
   .news-item { break-inside: avoid; }
   .news-item__text { font-size: 10pt; }
 }
+
+.research-paper { margin: 0 0 28px; }
+.research-paper h3 { font-size: 20px; line-height: 1.5; margin-bottom: 10px; }
+.research-paper p { color: $academic-muted; line-height: 1.8; }
+.reference-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.reference-grid h3 { font-size: 17px; }
+.reference-grid p, .reference-grid a { font-size: 14px; overflow-wrap: anywhere; }
+@media (max-width: 650px) { .reference-grid { grid-template-columns: 1fr; } }

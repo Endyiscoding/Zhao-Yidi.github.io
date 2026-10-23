@@ -5,141 +5,22 @@ permalink: /cv/
 author_profile: true
 hide_title: true
 redirect_from:
-  - /resume
+  - /resume/
 ---
 
 {% include base_path %}
-
-<div class="cv-toolbar"><h1 class="page__title">Curriculum vitae</h1></div>
+<div class="cv-toolbar"><h1 class="page__title">Curriculum vitae</h1><a class="academic-button" href="{{ base_path }}/files/YidiZhao_CV.pdf">Download PDF ↗</a></div>
 <div class="cv">
-  <header class="cv__intro">
-    <p class="cv-print-name">{{ site.name }} · {{ site.author.email }}</p>
-    <p class="cv__eyebrow">Aerial Robotics · Embodied Autonomy</p>
-    <h2 class="cv__headline">Ph.D. Candidate <span>in Aerospace Engineering</span></h2>
-    <p class="cv__summary">Building autonomous aerial robots that can <strong>perceive</strong>, <strong>plan</strong>, and <strong>physically interact</strong> with the real world.</p>
-    <div class="cv__focus" aria-label="Research focus">
-      <span>Aerial Manipulation</span>
-      <span>Robot Perception</span>
-      <span>Planning &amp; Control</span>
-    </div>
-    <nav class="cv__contact" aria-label="CV contact links">
-      <a href="mailto:{{ site.author.email }}">Email</a>
-      <a href="https://github.com/{{ site.author.github }}">GitHub</a>
-      <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}">LinkedIn</a>
-    </nav>
-  </header>
-
-  <section class="cv__section" aria-labelledby="cv-education">
-    <div class="cv__section-heading">
-      <span>01</span>
-      <h2 id="cv-education">Education</h2>
-    </div>
-    <div class="cv__timeline">
-      <article class="cv__item">
-        <p class="cv__date">2024 — Present</p>
-        <div class="cv__item-body">
-          <h3>Ph.D. in Aerospace Engineering</h3>
-          <p class="cv__institution">Penn State University <span>· University Park, PA</span></p>
-          <p>Research focus: aerial manipulation, embodied autonomy, robot perception, planning, and control.</p>
-        </div>
-      </article>
-      <article class="cv__item">
-        <p class="cv__date">2020 — 2024</p>
-        <div class="cv__item-body">
-          <h3>B.Eng. in Intelligent Science and Technology</h3>
-          <p class="cv__institution">Nankai University <span>· Tianjin, China</span></p>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <section class="cv__section" aria-labelledby="cv-experience">
-    <div class="cv__section-heading">
-      <span>02</span>
-      <h2 id="cv-experience">Experience</h2>
-    </div>
-    <div class="cv__timeline">
-      <article class="cv__item">
-        <p class="cv__date">2024 — Present</p>
-        <div class="cv__item-body">
-          <h3>Research Assistant</h3>
-          <p class="cv__institution">Department of Aerospace Engineering, Penn State University</p>
-        </div>
-      </article>
-      <article class="cv__item">
-        <p class="cv__date">Spring 2025</p>
-        <div class="cv__item-body">
-          <h3>Teaching Assistant</h3>
-          <p class="cv__institution">Penn State University</p>
-          <p>AERSP 304 · System Dynamics and Control</p>
-        </div>
-      </article>
-      <article class="cv__item">
-        <p class="cv__date">Fall 2024</p>
-        <div class="cv__item-body">
-          <h3>Teaching Assistant</h3>
-          <p class="cv__institution">Penn State University</p>
-          <p>AERSP 313 · Aerospace Analysis</p>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <section class="cv__section" aria-labelledby="cv-publications">
-    <div class="cv__section-heading">
-      <span>03</span>
-      <h2 id="cv-publications">Selected Publications</h2>
-    </div>
-    <div class="cv__publications">
-      {% assign publication_number = 0 %}
-      {% for post in site.publications reversed %}
-        {% if post.title %}
-          {% assign publication_number = publication_number | plus: 1 %}
-          <article class="cv-publication">
-            <span class="cv-publication__number">{{ publication_number | prepend: '0' | slice: -2, 2 }}</span>
-            <div class="cv-publication__body">
-              <h3>{% if post.paperurl %}<a href="{{ post.paperurl }}">{{ post.title }}</a>{% else %}{{ post.title }}{% endif %}</h3>
-              {% if post.authors %}
-                {% assign highlighted_authors = post.authors %}
-                {% for author in post.equal_contributors %}
-                  {% assign marked_author = author | append: '<sup class="equal-contribution-mark">*</sup>' %}
-                  {% assign highlighted_authors = highlighted_authors | replace: author, marked_author %}
-                {% endfor %}
-                {% assign highlighted_authors = highlighted_authors | replace: 'Y. Jiang', '<strong class="cv-publication__me">Y. Jiang</strong>' %}
-                <p class="cv-publication__authors">{{ highlighted_authors }}</p>
-                {% if post.equal_contributors %}<p class="cv-publication__equal-note"><span>*</span> Equal contribution</p>{% endif %}
-              {% endif %}
-              <p class="cv-publication__venue"><i>{{ post.venue }}</i> · {{ post.date | date: "%Y" }}</p>
-              <div class="cv-publication__links">
-                {% if post.paperurl %}<a href="{{ post.paperurl }}">Paper</a>{% endif %}
-                {% if post.projecturl %}<a href="{% unless post.projecturl contains '://' %}{{ base_path }}{% endunless %}{{ post.projecturl }}">Project</a>{% endif %}
-                {% if post.codeurl %}<a href="{{ post.codeurl }}">Code</a>{% endif %}
-              </div>
-            </div>
-          </article>
-        {% endif %}
-      {% endfor %}
-    </div>
-  </section>
-
-  <section class="cv__section" aria-labelledby="cv-skills">
-    <div class="cv__section-heading">
-      <span>04</span>
-      <h2 id="cv-skills">Technical Skills</h2>
-    </div>
-    <div class="cv__skill-groups">
-      <div class="cv__skill-group">
-        <h3>Programming</h3>
-        <div class="cv__tags"><span>Python</span><span>C++</span><span>C</span><span>MATLAB</span></div>
-      </div>
-      <div class="cv__skill-group">
-        <h3>Robotics</h3>
-        <div class="cv__tags"><span>ROS</span><span>Perception</span><span>Planning</span><span>Control</span></div>
-      </div>
-      <div class="cv__skill-group">
-        <h3>Hardware &amp; Design</h3>
-        <div class="cv__tags"><span>SolidWorks</span><span>STM32</span></div>
-      </div>
-    </div>
-  </section>
-</div>
+<header class="cv__intro">
+<p class="cv-print-name">Yidi Zhao · ymz5436@psu.edu</p>
+<p class="cv__eyebrow">Econometrics</p>
+<h2 class="cv__headline">Ph.D. Candidate <span>in Economics</span></h2>
+<p class="cv__summary">Department of Economics, Penn State University</p>
+<div class="cv__focus"><span>Model Misspecification</span><span>Measurement Error</span><span>Statistical Decision Theory</span></div>
+<p>Applied econometrics: industrial organization, health, and labor.</p>
+<nav class="cv__contact" aria-label="CV contact links"><a href="mailto:ymz5436@psu.edu">ymz5436@psu.edu</a><a href="tel:+18146990786">814-699-0786</a></nav>
+</header>
+<section class="cv__section" aria-labelledby="cv-education"><div class="cv__section-heading"><span>01</span><h2 id="cv-education">Education</h2></div><div class="cv__timeline"><article class="cv__item"><p class="cv__date">May 2027 (expected)</p><div class="cv__item-body"><h3>Ph.D. in Economics</h3><p class="cv__institution">Department of Economics, Penn State University</p></div></article><article class="cv__item"><p class="cv__date">July 2020</p><div class="cv__item-body"><h3>M.A. in Economics</h3><p class="cv__institution">National School of Development, Peking University</p></div></article><article class="cv__item"><p class="cv__date">July 2017</p><div class="cv__item-body"><h3>B.A. in Economics</h3><p class="cv__institution">School of Finance, Central University of Finance and Economics</p></div></article></div></section><section class="cv__section" aria-labelledby="cv-research"><div class="cv__section-heading"><span>02</span><h2 id="cv-research">Research</h2></div>
+<h3>Job Market Paper</h3><p><strong>Robust Inference under Local Distribution Shift in Wasserstein Distance</strong></p>
+<p>This paper studies the robustness of estimators to small departures of the true data-generating process from a reference model that defines the parameter of interest. We measure distributional departures using the quadratic Wasserstein distance, which captures movements of the observations in the sample space due to various factors like measurement errors. We consider local deviations within shrinking Wasserstein neighborhoods so that both sampling uncertainty and distributional bias matter asymptotically. Within this framework, we derive local asymptotic minimax bounds and construct estimators that attain the optimal trade-off between efficiency and robustness. Our results cover both regular parametric models and models defined by unconditional moment restrictions.</p><h3>Work in Progress</h3><p><strong>Multinomial Logistic Regression with Sample Selection</strong><br>Joint work with Onil Boussim (Cal Poly SLO)</p><p><strong>Nonparametric Tests for Proprietary Information at First-Price, Common Value Auctions</strong></p></section><section class="cv__section" aria-labelledby="cv-teaching"><div class="cv__section-heading"><span>03</span><h2 id="cv-teaching">Teaching</h2></div><div class="cv__timeline"><article class="cv__item"><p class="cv__date">Summer 2026</p><div class="cv__item-body"><h3>Instructor</h3><p class="cv__institution">Department of Economics, Penn State University</p><p>ECON 106: Statistical Foundations for Econometrics (undergraduate)</p></div></article><article class="cv__item"><p class="cv__date">Fall 2021 – Spring 2025</p><div class="cv__item-body"><h3>Teaching Assistant</h3><p class="cv__institution">Department of Economics, Penn State University</p><ul><li>ECON 454: Economics of Mergers (undergraduate)</li><li>ECON 402: Decision Making and Strategy in Economics (undergraduate)</li><li>MA ECON 510: Econometrics (graduate)</li></ul></div></article><article class="cv__item"><p class="cv__date">Spring 2019 / Fall 2018</p><div class="cv__item-body"><h3>Teaching Assistant</h3><p class="cv__institution">National School of Development, Peking University</p><ul><li>Advanced Microeconomics II (graduate core course), Spring 2019</li><li>Social Science Survey Data Analysis (undergraduate), Fall 2018</li></ul></div></article></div></section><section class="cv__section" aria-labelledby="cv-skills"><div class="cv__section-heading"><span>04</span><h2 id="cv-skills">Skills</h2></div><div class="cv__skill-groups"><div class="cv__skill-group"><h3>Programming</h3><div class="cv__tags"><span>Stata</span><span>Python</span><span>Julia</span></div></div><div class="cv__skill-group"><h3>Languages</h3><div class="cv__tags"><span>English (fluent)</span><span>Chinese (native)</span></div></div></div></section>
+<section class="cv__section" aria-labelledby="cv-references"><div class="cv__section-heading"><span>05</span><h2 id="cv-references">References</h2></div><div class="reference-grid"><article><h3>Marc Henry</h3><p>Professor of Economics<br>Penn State University</p><a href="mailto:marc.henry@psu.edu">marc.henry@psu.edu</a></article><article><h3>Andrés Aradillas-López</h3><p>Professor of Economics<br>Penn State University</p><a href="mailto:aza12@psu.edu">aza12@psu.edu</a></article><article><h3>Keisuke Hirano</h3><p>Professor of Economics<br>Penn State University</p><a href="mailto:kuh237@psu.edu">kuh237@psu.edu</a></article></div></section></div>
